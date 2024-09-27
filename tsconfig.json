@@ -1,0 +1,36 @@
+{
+    "extends": "@tsconfig/node16/tsconfig.json",
+    "compilerOptions": {
+      "incremental": true,
+      "composite": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "strict": true,
+      "declaration": true,
+      "skipDefaultLibCheck": true,
+      "skipLibCheck": true,
+      "outDir": "build",
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "lib": [
+        "esnext"
+      ],
+      "resolveJsonModule": true,
+      "types": [
+        "node",
+        "jest",
+        "express"
+      ],
+    },
+    "include": [
+      "src/**/*",
+      "bin/**/*",
+      "tsoa/swagger.json",
+      "prisma/**/*",
+      "scripts/**/*",
+      "package.json",
+      "eth-sdk/**/*",
+      "test/**/*"
+    ],
+  }
+  
